@@ -1,2 +1,3 @@
-# Vercel-Clone
-Vercel website clone using Html &amp; Sass
+<p align="center">
+  <img src="preview.png">
+</p>
