@@ -34,9 +34,3 @@ let dateSpan = document.getElementById("datenow");
 let year = new Date().getFullYear();
 console.log(year);
 dateSpan.textContent = year;
-
-// --------------------------------------------------------------------------
-if ("serviceWorker" in navigator) {
-  // register service worker
-  navigator.serviceWorker.register("service-worker.js");
-}
