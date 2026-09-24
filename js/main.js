@@ -11,7 +11,7 @@ toggleBtn.addEventListener("click", function () {
 });
 
 // Auto Close Mobile Nav When Link is Clickec
-for (i = 0; i < navLinks.length; i++) {
+for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("click", function () {
     mobNav.classList.toggle("show");
     toggleBtn.setAttribute("aria-expanded", mobNav.classList.contains("show"));
