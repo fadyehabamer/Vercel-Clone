@@ -262,6 +262,8 @@ header nav #toggle-btn {
     -ms-flex-align: center;
     align-items: center;
     cursor: pointer;
+    background: none;
+    border: 0;
     -webkit-transition: all 100ms ease-in-out;
     transition: all 100ms ease-in-out;
     display: none

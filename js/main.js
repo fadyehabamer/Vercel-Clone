@@ -7,12 +7,14 @@ let navLinks = document.getElementsByClassName("nav-link");
 // Add/remove .show class which show/hide the Mobile Nav
 toggleBtn.addEventListener("click", function () {
   mobNav.classList.toggle("show");
+  toggleBtn.setAttribute("aria-expanded", mobNav.classList.contains("show"));
 });
 
 // Auto Close Mobile Nav When Link is Clickec
 for (i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("click", function () {
     mobNav.classList.toggle("show");
+    toggleBtn.setAttribute("aria-expanded", mobNav.classList.contains("show"));
   });
 }
 
@@ -34,9 +36,3 @@ let dateSpan = document.getElementById("datenow");
 let year = new Date().getFullYear();
 console.log(year);
 dateSpan.textContent = year;
-
-// --------------------------------------------------------------------------
-if ("serviceWorker" in navigator) {
-  // register service worker
-  navigator.serviceWorker.register("service-worker.js");
-}
