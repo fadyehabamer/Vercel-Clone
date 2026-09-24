@@ -13,7 +13,7 @@ A static clone of the [Vercel](https://vercel.com) landing page, built with HTML
 ```
 index.html          page markup
 css/styles.css      stylesheet loaded by the page (compiled from sass/, with vendor prefixes)
-sass/               SCSS sources: styles.scss imports _variables, _extends and _animations
+sass/               SCSS sources: styles.scss loads _variables, _extends and _animations with @use
 js/main.js          mobile menu toggle, header border on scroll, footer year
 images/             logo, illustrations and globe image
 ```
@@ -40,7 +40,7 @@ Note that the committed `css/styles.css` was also run through an autoprefixer, s
 npx sass --no-source-map sass/styles.scss | npx -p postcss -p postcss-cli -p autoprefixer postcss --use autoprefixer -o css/styles.css
 ```
 
-Dart Sass currently prints deprecation warnings for `@import` and `lighten()`; they do not affect the output.
+The sources use the Sass module system (`@use`, `sass:color`), so they compile without deprecation warnings.
 
 ## License
 
