@@ -157,7 +157,8 @@ header {
 
 #hero {
   width: 100vw;
-  h2 {
+  h1 span {
+    display: block;
     text-align: center;
     font-size: 22vmin;
     font-weight: 700;
@@ -227,7 +228,7 @@ header {
 
 @media (max-width: 768px) {
   #hero {
-    h2 {
+    h1 span {
       animation-name: none !important;
       &:first-of-type {
         text-shadow: 8px 0px 2px #007cf0;
@@ -259,8 +260,8 @@ header {
   width: 100%;
   margin-top: 50px;
   text-align: center;
-  h6 {
-    @extend %h6;
+  .eyebrow {
+    @extend %eyebrow;
   }
   .path-line {
     @extend %path-line;
@@ -279,8 +280,8 @@ header {
 // --------------------------------------------------------------------------------- Start Section ******
 
 #start {
-  h3 {
-    @extend %h3;
+  h2 {
+    @extend %section-heading;
   }
   .pars {
     margin: auto;
@@ -318,7 +319,7 @@ header {
           margin-bottom: 8vmax;
           margin-top: 8vmax;
         }
-        h4 {
+        h3 {
           width: 100%;
           font-size: 20px;
         }
@@ -330,8 +331,8 @@ header {
     }
   }
 
-  h6 {
-    @extend %h6;
+  .eyebrow {
+    @extend %eyebrow;
   }
 }
 
@@ -375,8 +376,8 @@ header {
   width: 100%;
   margin-top: 50px;
   text-align: center;
-  h6 {
-    @extend %h6;
+  .eyebrow {
+    @extend %eyebrow;
   }
   .path-line {
     @extend %path-line;
@@ -395,8 +396,8 @@ header {
 // --------------------------------------------------------------------------------- Accelerate Section ******
 
 #accelerate {
-  h3 {
-    @extend %h3;
+  h2 {
+    @extend %section-heading;
   }
   > p {
     width: 80%;
@@ -417,7 +418,7 @@ header {
       img {
         max-width: 90%;
       }
-      h4 {
+      h3 {
         font-size: 20px;
       }
       p {
@@ -459,8 +460,8 @@ header {
   width: 100%;
   margin-top: 50px;
   text-align: center;
-  h6 {
-    @extend %h6;
+  .eyebrow {
+    @extend %eyebrow;
   }
   .path-line {
     @extend %path-line;
@@ -479,8 +480,8 @@ header {
 // --------------------------------------------------------------------------------- Delight Section ******
 
 #delight {
-  h3 {
-    @extend %h3;
+  h2 {
+    @extend %section-heading;
   }
   .pars {
     margin: auto;
@@ -528,8 +529,8 @@ header {
       }
     }
   }
-  h6 {
-    @extend %h6;
+  .eyebrow {
+    @extend %eyebrow;
     margin: 50px auto;
   }
 }
